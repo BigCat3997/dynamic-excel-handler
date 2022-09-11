@@ -2,6 +2,19 @@
 
 Sample which parse an Excel file as dynamic object.
 
+
+```java
+/**
+ * Handle the Excel content as dynamic object
+ *
+ * @param <T> type of model will be parsed from Excel file
+ */
+@FunctionalInterface
+public interface ExcelConsumer<T> {
+    void modelHandler(Cell currentCell, int cellIdx, T consumer);
+}
+```
+
 ```java
 @Slf4j
 public final class ExcelUtil {
