@@ -1,3 +1,3 @@
 # dynamic-excel-handler
 
-Sample which parse a excel file as dynamic object.
+Sample which parse an Excel file as dynamic object.
